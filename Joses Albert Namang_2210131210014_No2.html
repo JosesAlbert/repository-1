@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+table{
+    justify-content: center;
+    margin-left: 100px;
+    margin-bottom: 200px;
+}
+.ganjil > td:nth-child(odd){
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.genap > td:nth-child(even){
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+td{
+    height: 15px;
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    animation-name: pp;
+    position: relative;
+    animation-duration: 4s;
+}
+@keyframes pp{
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 800px; top:0px;}
+    50% {background-color: blue; left: 800px; top: 800px;}
+    75% {background-color: green; left: 0px; top:800px;}
+    100%{background-color: red; left: 0; top: 0px;}
+}
+</style>
+<body>
+    <div></div>
+    <table border="1">
+        <tr class="ganjil">
+            <td>A</td>
+            <td></td>
+            <td>A</td>
+            <td></td>
+            <td>A</td>
+            <td></td>
+            <td>A</td>
+            <td></td>       
+        </tr>
+        <tr class="genap">
+            <td></td>
+            <td>A</td>
+            <td></td>
+            <td>A</td>
+            <td></td>
+            <td>A</td>
+            <td></td>
+            <td>A</td>      
+        </tr>
+        <tr class="ganjil">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>      
+        </tr>
+        <tr class="genap">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>      
+        </tr>
+        <tr class="ganjil">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>      
+        </tr>
+        <tr class="genap">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>      
+        </tr>
+        <tr class="ganjil">
+            <td>A</td>
+            <td></td>
+            <td>A</td>
+            <td></td>
+            <td>A</td>
+            <td></td>
+            <td>A</td>
+            <td></td>           
+        </tr>
+        <tr class="genap">
+            <td></td>
+            <td>A</td>
+            <td></td>
+            <td>A</td>
+            <td></td>
+            <td>A</td>
+            <td></td>
+            <td>A</td>      
+        </tr>
+    </table>
+</body>
+</html>

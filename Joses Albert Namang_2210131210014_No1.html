@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-color: crimson;
+        color: white;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .container{
+        flex-wrap: wrap;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 30vh;    
+    }
+    .content img{
+        border-radius: 20px;
+    }
+    .content{
+        display: flex;
+        background-color: crimson;
+        color: white;
+        justify-content: space-between;
+        width: 80%;
+        height: 20vh;
+        text-align: center;
+        border-radius: 20px;
+    }
+    h2{
+        padding-top: 30px;
+        padding-right: 50px;
+    }
+    .komik{
+        display: flex;
+        justify-content: space-around;
+    }
+    .komik img{
+        border-radius: 20px;
+    }
+    .komik2{
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .komik2 img{
+        border-radius: 20px;
+    }
+    .card {
+        box-sizing: border-box;
+        width: 190px;
+        height: 254px;
+        border: 1px solid white;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+        font-weight: bolder;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .button{
+        display: flex;
+        padding-top: 50px;
+        justify-content: end;
+    }
+    .pesan{
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        height: 100px;
+        width: 100px;
+        background-color: coral;
+        
+    }
+    .pesan:hover{
+        background-color: #00ffff;
+    }
+    @media screen and (max-width: 480px) {
+        .komik{
+            display: grid;
+            row-gap: 70px;
+        }
+        .komik2{
+            display: grid;
+            row-gap: 70px;
+        }
+        .content img{
+            width: 150px;
+        }
+        h2{
+            padding: 0;
+        }
+        .content{
+            font-size: small;
+        }
+    }
+</style>
+<body>
+    <Header>
+        <h1>TOKO KOMIK</h1>
+    </Header>
+    <div class="container">
+        <div class="content">
+            <img src="gambar/logo-elexmedia-komputindo.png" alt="" width="200px">
+            <h2>Komik yang sudah diterjemahkan ke bahasa Indonesia hanya ada disini!</h2>
+        </div>
+    </div>
+    <div class="komik">
+        <div class="card">
+            <img src="gambar/sakamotodays.jpg" alt="Sakamoto Days" width="200px">
+        </div>
+        <div class="card">
+            <img src="gambar/blue lock.jpg" alt="Blue Lock" width="200px">
+        </div>
+        <div class="card">
+            <img src="gambar/a couple of cuchos.jpg" alt="A Couple of Cuchos" width="200px">
+        </div>
+    </div>
+    <div class="komik2">
+        <div class="card">
+            <img src="gambar/akame ga kill.jpg" alt="Akame Ga Kill" width="200px">
+        </div>
+        <div class="card">
+            <img src="gambar/blue box.jpg" alt="Blue Box" width="200px">
+        </div>
+        <div class="card">
+            <img src="gambar/black clover.jpg" alt="Black Clover" width="200px">
+        </div>
+    </div>
+    <div class="button">
+        <div class="pesan">
+            <h1>Beli</h1>
+        </div>
+    </div>
+</body>
+
+</html>
