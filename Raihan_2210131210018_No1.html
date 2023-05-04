@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOKO SEPATU</title>
+    <style>
+        .box{
+            display: flex;
+            border-radius: 9px;
+            flex-wrap: wrap;
+            background-color: #9E4784;
+            padding: 120px 130px; 
+        }
+
+        .box1{
+            padding: 90px 129px;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+        .dalam{
+            padding-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       
+        .logo{
+            width: 83px;
+        }
+        .box>div{
+            padding-bottom: 890px;
+            display: flex;
+            background-color: #D27685;
+            height: 100px;
+            margin: 0px;
+            padding: 40px;
+            margin-top: 120px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-left: 50px;
+            transition: all 0.5s ease;
+        }
+
+        header{
+            position:fixed;
+            flex-wrap: wrap;
+            background-color: #9E4784;
+            flex-wrap: wrap;
+            height: auto;
+            min-height: 70px;
+            font-family: Impact, HaettenschweilerC, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 2px 2px 4px #000000;
+            font-size: 59px;
+            font-style:oblique;
+            color:#D27685;
+            font-weight: 100;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-top-right-radius: 80px;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 80px;
+            text-align: center;
+            justify-self: center;
+        }
+        img:hover{
+            transform: scale(1.4);
+            opacity: 0.8;
+            transition: all 0.8s ease;
+
+        }
+        .box>div:hover{
+            box-shadow: 0 4px 8px 0 #D27685, 0 6px 20px 0 #9E4784;
+            
+        }
+
+
+        .pesan{
+            background-color:#9E4784;
+            position: fixed;
+            border-radius: 120px;
+            color: #37306B;
+            cursor: pointer;
+            right: 30px;
+            bottom: 10px;
+            transition: all 0.5s ease;
+            text-decoration: none;
+            color: #C9EEFF;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .pesan:hover{
+            background-color: #6b3030;
+            transform: scale(1.1);
+        }
+        .bawah{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    
+
+        @media screen and (max-width: 476px){
+            .box1{
+                padding: 0px;
+                width: 485px;
+                font-size: 12px;
+                text-align: center;
+                display: inline-flex;
+            }
+            .box1>div{
+                margin:0px; 
+                font-size: 19px;
+                border-radius: 9px;
+                display: grid;
+                padding-bottom: 19px;
+            }
+            .logo{
+                width: 84px;
+            }
+        
+            header{
+                width: 520px;
+                height: 8px;
+                font-size: 29px;
+                margin-left: -30px;
+                }
+            .pesan{
+                padding:20px;
+                font-size: 10px;
+            }
+        }
+        @media screen and (min-width: 476px) {
+            header{
+                width: 575px;
+                height: 8px;
+                font-size: 29px;
+                }
+            .pesan{
+                padding:26px;
+                font-size: 10px;
+            }
+            .box1>div{
+                margin:0px; 
+                font-size: 19px;
+                border-radius: 9px;
+                display: grid;
+                text-align: center;
+                padding-bottom: 19px;
+            }
+        }
+        @media screen and (min-width: 600px) {
+            header{
+                width: 640px;
+                height: 8px;
+                font-size: 29px;
+            }
+
+            .pesan{
+                padding:20px;
+                font-size: 12px;
+            }
+            .box{
+                justify-content:center;
+            }
+            .box1>div{
+                margin:0px; 
+                font-size: 19px;
+                border-radius: 9px;
+            }
+        }
+        @media screen and (min-width:768px) {
+            .box1>div{
+                margin:0px; 
+                font-size: 19px;
+                border-radius: 9px;
+                display: inline-flex;
+            }
+            .box>div{
+                margin: 30px;
+            }
+
+            .box{
+                display: grid;
+            }
+
+            header{
+            position: fixed;
+            background-color: #9E4784;
+            width: 1580px;
+            height: auto;
+            min-height: 70px;
+            font-family: Impact, HaettenschweilerC, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+            font-style:oblique;
+            color:#D27685;
+            font-weight: 100;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .background{
+            background-color: #37306B;
+        }
+        
+    </style>
+</head>
+<body class="background">
+<header>
+<div>
+    THRIFT BRANDED SHOES
+</div>
+</header>
+
+<div class="box1">
+    <div class="dalam">
+        <div><img src="sneakist.png" alt="" class="logo"></div>
+        <div>Sepatu adalah Benda yang sering dikenakan manusia saat sedang kemana mana, seperti nongki dengan teman teman
+        </div>
+</div>
+<div class="box">
+    <div><img src="ventela2.png" alt=""></div>
+    <div><img src="ventela.png" alt=""></div>    
+    <div><img src="ventela3.png" alt=""></div>
+    <div><img src="ventela4.png" alt=""></div>
+    <div><img src="ventela5.png" alt=""></div>
+</div>
+
+<div class="bawah">
+    <a class="pesan" href="" >Order here</a>
+</div>
+</body>
+</html>
